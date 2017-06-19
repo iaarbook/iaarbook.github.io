@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>https://iaarbook.github.io//</loc>
+     <lastmod>2017-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://iaarbook.github.io//deeplearning/</loc>
+     <lastmod>2017-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://iaarbook.github.io//about/</loc>
+     <lastmod>2017-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://iaarbook.github.io//contact/</loc>
+     <lastmod>2017-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>
