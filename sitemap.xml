@@ -27,7 +27,23 @@
 
     
     <url>
+     <loc>https://iaarbook.github.io//datascience/</loc>
+     <lastmod>2017-06-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>https://iaarbook.github.io//about/</loc>
+     <lastmod>2017-06-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://iaarbook.github.io//autor/</loc>
      <lastmod>2017-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
