@@ -35,6 +35,22 @@
 
     
     <url>
+     <loc>https://iaarbook.github.io//python/</loc>
+     <lastmod>2017-06-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://iaarbook.github.io//rlang/</loc>
+     <lastmod>2017-06-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>https://iaarbook.github.io//about/</loc>
      <lastmod>2017-06-20</lastmod>
      <changefreq>daily</changefreq>
