@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Procesamiento de lenguaje - Libro online de IAAR</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Procesamiento de lenguaje";
+    var mkdocs_page_input_path = "NLP.md";
+    var mkdocs_page_url = "/NLP/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-29080434-5', 'iaarbook');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Libro online de IAAR</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Inteligencia Artificial</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../deeplearning/">Deep Learning</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ML/">Machine Learning</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../datascience/">Ciencia de datos</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../bigdata/">Big Data</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Procesamiento de lenguaje</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#introduccion-al-procesamiento-del-lenguaje-natural">Introducción al Procesamiento del Lenguaje Natural</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#que-es-el-procesamiento-del-lenguaje-natural">¿Qué es el Procesamiento del Lenguaje Natural?</a></li>
+        
+            <li><a class="toctree-l3" href="#aplicaciones-del-procesamiento-del-lenguaje-natural">Aplicaciones del Procesamiento del Lenguaje Natural</a></li>
+        
+            <li><a class="toctree-l3" href="#corpus-linguistico">Corpus lingüístico</a></li>
+        
+            <li><a class="toctree-l3" href="#librerias-de-python-para-procesamiento-del-lenguaje-natural">Librerías de Python para Procesamiento del Lenguaje Natural</a></li>
+        
+            <li><a class="toctree-l3" href="#deep-learning-y-procesamiento-del-lenguaje-natural">Deep Learning y Procesamiento del Lenguaje Natural</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../python/">Intro Python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rlang/">Intro R</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">Sobre IAAR</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../autor/">Sobre el autor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contact/">Contacto</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Libro online de IAAR</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Procesamiento de lenguaje</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="introduccion-al-procesamiento-del-lenguaje-natural">Introducción al Procesamiento del Lenguaje Natural</h1>
+<p><center><img alt="NLP" title="NLP" src="http://relopezbriega.github.io/images/NLP.png" width="60%" height="60%"></center></p>
+<p>El <a href="https://es.wikipedia.org/wiki/Lenguaje">lenguaje</a> es una de las herramientas centrales en nuestra vida social y profesional. Entre otras cosas, actúa como un medio para transmitir ideas, información, opiniones y sentimientos; así como para persuadir, pedir información, o dar ordenes. Asimismo, el <a href="https://es.wikipedia.org/wiki/Lenguaje">lenguaje</a> humano es algo que esta en constante cambio y evolución; y que puede llegar a ser muy <em>ambiguo</em> y <em>variable</em>. Tomemos por ejemplo la frase <em>"comí una pizza con amigos"</em> comparada con <em>"comí una pizza con aceitunas"</em>; su estructura es la misma, pero su significado es totalmente distinto. De la misma manera, un mismo mensaje puede ser expresado de formas diferentes; <em>"comí una pizza con amigos"</em> puede también ser expresado como <em>"compartí una pizza con amigos"</em>. </p>
+<p>Los seres humanos somos muy buenos a la hora de producir e interpretar el <a href="https://es.wikipedia.org/wiki/Lenguaje">lenguaje</a>, podemos expresar, percibir e interpretar significados muy elaborados en fracción de segundos casi sin dificultades; pero al mismo tiempo, somos también muy malos a la hora de entender y describir formalmente las reglas que lo gobiernan. Por este motivo, entender y producir el <a href="https://es.wikipedia.org/wiki/Lenguaje">lenguaje</a> por medio de una <em>computadora</em> es un problema muy difícil de resolver. Éste problema, es el campo de estudio de lo que en <a href="https://iaarbook.github.io/">inteligencia artificial</a> se conoce como <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a> o <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> por sus siglas en inglés. </p>
+<h2 id="que-es-el-procesamiento-del-lenguaje-natural">¿Qué es el Procesamiento del Lenguaje Natural?</h2>
+<p>El <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a> o <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a>  es una disciplina que se encuentra en la intersección de varias ciencias, tales como las <a href="https://es.wikipedia.org/wiki/Ciencias_de_la_computaci%C3%B3n">Ciencias de la Computación</a>, la <a href="https://iaarbook.github.io/">Inteligencia Artificial</a> y <a href="https://es.wikipedia.org/wiki/Psicolog%C3%ADa_cognitiva">Psicología Cognitiva</a>. Su idea central es la de darle a las máquinas la capacidad de leer y comprender los idiomas que hablamos los humanos. La investigación del <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a> tiene como objetivo responder a la pregunta de cómo las personas son capaces de comprender el significado de una oración oral / escrita y cómo las personas entienden lo que sucedió, cuándo y dónde sucedió; y las diferencias entre una suposición, una creencia o un hecho.</p>
+<p>Los elementos comunes de cualquier arquitectura estándar de un sistema para el <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a> son:</p>
+<ul>
+<li>
+<p><strong>Reconocimiento de voz:</strong> Convertir una palabra hablada en un conjunto de palabras. Las palabras habladas se componen de una serie de parámetros relacionados con el sentido de la audición.</p>
+</li>
+<li>
+<p><strong>Comprensión del lenguaje:</strong> El objetivo de este elemento es generar un significado para las palabras habladas, y ese significado será utilizado por el siguiente elemento (gestión del diálogo).</p>
+</li>
+<li>
+<p><strong>Gestión del diálogo:</strong> La tarea principal de este elemento es coordinar y mantener unidas todas las partes del sistema y los usuarios, y conectarse con otros sistemas.</p>
+</li>
+<li>
+<p><strong>Comunicación con sistemas externos:</strong> como sistemas expertos, sistemas de bases de datos u otras aplicaciones informáticas.</p>
+</li>
+<li>
+<p><strong>Generación de respuesta:</strong> Establecer el mensaje que el sistema debe entregar.</p>
+</li>
+<li>
+<p><strong>Salida de voz:</strong> Uso de diferentes técnicas para producir el mensaje desde el sistema.</p>
+</li>
+</ul>
+<p>En general, en <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a> se utilizan seis niveles de comprensión con el objetivo de descubrir el significado del discurso. Estos niveles son:</p>
+<ul>
+<li>
+<p><strong>Nivel fonético:</strong> Aquí se presta atención a la <a href="https://es.wikipedia.org/wiki/Fon%C3%A9tica">fonética</a>, la forma en que las palabras son pronunciadas. Este nivel es importante cuando procesamos la palabra hablada, no así cuando trabajamos con texto escrito. </p>
+</li>
+<li>
+<p><strong>Nivel morfológico:</strong> Aquí nos interesa realizar un análisis <a href="https://es.wikipedia.org/wiki/Morfolog%C3%ADa_ling%C3%BC%C3%ADstica">morfológico</a> del discurso; estudiar la estructura de las palabras para delimitarlas y clasificarlas.</p>
+</li>
+<li>
+<p><strong>Nivel sintáctico:</strong> Aquí se realiza un análisis de <a href="https://es.wikipedia.org/wiki/Sintaxis">sintaxis</a>, el cual  incluye la acción de dividir una oración en cada uno de sus componentes. </p>
+</li>
+<li>
+<p><strong>Nivel semántico:</strong> Este nivel es un complemente del anterior, en el análisis <a href="https://es.wikipedia.org/wiki/Sem%C3%A1ntica">semántico</a> se busca entender el significado de la oración. Las palabras pueden tener múltiples significados, la idea es identificar el significado apropiado por medio del contexto de la oración.</p>
+</li>
+<li>
+<p><strong>Nivel discursivo:</strong> El nivel discursivo examina el significado de la oración en relación a otra oración en el texto o párrafo del mismo documento.</p>
+</li>
+<li>
+<p><strong>Nivel pragmático:</strong> Este nivel se ocupa del análisis de oraciones y cómo se usan en diferentes situaciones. Además, también cómo su significado cambia dependiendo de la situación.</p>
+</li>
+</ul>
+<p>Todos los niveles descritos aquí son inseparables y se complementan entre sí. El objetivo de los sistemas de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> es incluir estas definiciones en una <em>computadora</em> y luego usarlas para crear una oración estructurada y sin ambigüedades con un significado bien definido.</p>
+<h2 id="aplicaciones-del-procesamiento-del-lenguaje-natural">Aplicaciones del Procesamiento del Lenguaje Natural</h2>
+<p>Los algoritmos de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a> suelen basarse en algoritmos de <a href="https://iaarbook.github.io/ML/">aprendizaje automático</a>. En lugar de codificar manualmente grandes conjuntos de reglas, el <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> puede confiar en el <a href="https://iaarbook.github.io/ML/">aprendizaje automático</a> para aprender estas reglas automáticamente analizando un conjunto de ejemplos y haciendo una <a href="https://es.wikipedia.org/wiki/Estad%C3%ADstica_inferencial">inferencia estadística</a>. En general, cuanto más datos analizados, más preciso será el modelo. Estos algoritmos pueden ser utilizados en algunas de las siguientes aplicaciones:</p>
+<ul>
+<li>
+<p><strong>Resumir texto:</strong> Podemos utilizar los modelos de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> para extraer las ideas más importantes y centrales mientras ignoramos la información irrelevante.</p>
+</li>
+<li>
+<p><strong>Crear chatbots:</strong> Podemos utilizar las técnicas de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> para crear <a href="https://iaarhub.github.io/capacitacion/2017/04/09/31-herramientas-que-te-ayudaran-a-crear-tu-propio-chatbot/">chatbots</a> que puedan interactuar con las personas.</p>
+</li>
+<li>
+<p><strong>Generar automáticamente <a href="https://es.wikipedia.org/wiki/Etiquetado_gramatical">etiquetas de palabras clave</a></strong>: Con <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> también podemos realizar un análisis de contenido aprovechando el algoritmo de <a href="https://es.wikipedia.org/wiki/Latent_Dirichlet_Allocation">LDA</a> para asignar palabras claves a párrafos del texto.</p>
+</li>
+<li>
+<p><strong><a href="https://es.wikipedia.org/wiki/Reconocimiento_de_entidades_nombradas">Reconocer entidades</a></strong>: Con <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> podemos identificar a las distintas entidades del texto como ser una persona, lugar u organización.</p>
+</li>
+<li>
+<p><strong><a href="https://es.wikipedia.org/wiki/An%C3%A1lisis_de_sentimiento">Análisis de sentimiento</a></strong>: También podemos utilizar <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> para identificar el <em>sentimiento</em> de una cadena de texto, desde muy negativo a neutral y a muy positivo.</p>
+</li>
+</ul>
+<h2 id="corpus-linguistico">Corpus lingüístico</h2>
+<p>Hoy en día, es indispensable el uso de buenos recursos lingüísticos para el desarrollo de los sistemas de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a>. Estos recursos son esenciales para la creación de gramáticas, en el marco de aproximaciones simbólicas; o para llevar a cabo la formación de módulos basados en el <a href="https://iaarbook.github.io/ML/">aprendizaje automático</a>.</p>
+<p>Un <a href="https://es.wikipedia.org/wiki/Corpus_ling%C3%BC%C3%ADstico">corpus lingüístico</a> es un conjunto amplio y estructurado de ejemplos reales de uso de la lengua. Estos ejemplos pueden ser textos (los más comunes), o muestras orales (generalmente transcritas). Un <a href="https://es.wikipedia.org/wiki/Corpus_ling%C3%BC%C3%ADstico">corpus lingüístico</a> es un conjunto de textos relativamente grande, creado independientemente de sus posibles formas o usos. Es decir, en cuanto a su estructura, variedad y complejidad, un corpus debe reflejar una lengua, o su modalidad, de la forma más exacta posible; en cuanto a su uso, preocuparse de que su representación sea real. La idea es que representen al lenguaje de la mejor forma posible para que los modelos de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> puedan aprender los patrones necesarios para entender el <a href="https://es.wikipedia.org/wiki/Lenguaje">lenguaje</a>. Encontrar un buen <a href="https://es.wikipedia.org/wiki/Corpus_ling%C3%BC%C3%ADstico">corpus</a> sobre el cual trabajar no suele ser una tarea sencilla; uno que se suele utilizar para entrenar modelos es la información de <a href="https://dumps.wikimedia.org/eswiki/latest/">wikipedia</a>.</p>
+<h2 id="librerias-de-python-para-procesamiento-del-lenguaje-natural">Librerías de Python para Procesamiento del Lenguaje Natural</h2>
+<p>Actualmente, <a href="https://www.python.org/">Python</a> es uno de los lenguajes más populares para trabajar en el campo la <a href="https://iaarbook.github.io/">Inteligencia Artificial</a>. Para abordar los problemas relacionados con el <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a> <a href="https://www.python.org/">Python</a> nos proporciona las siguientes librerías:</p>
+<ul>
+<li>
+<p><strong><a href="http://www.nltk.org/">NLTK</a>:</strong> Es la librería líder para el <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a>. Proporciona interfaces fáciles de usar a más de <em><a href="http://nltk.org/nltk_data/">50 corpus</a></em> y recursos léxicos, junto con un conjunto de bibliotecas de procesamiento de texto para la clasificación, tokenización, el etiquetado, el análisis y el razonamiento semántico.</p>
+</li>
+<li>
+<p><strong><a href="https://spacy.io/">Spacy</a>:</strong> Es una librería relativamente nueva que sobresale por su facilidad de uso y su velocidad a la hora de realizar el procesamiento de texto.</p>
+</li>
+<li>
+<p><strong><a href="https://radimrehurek.com/gensim/intro.html">Gensim</a>:</strong> Es una librería diseñada para extraer automáticamente los temas semánticos de los documentos de la forma más eficiente y con menos complicaciones posible.</p>
+</li>
+<li>
+<p><strong><a href="https://pyldavis.readthedocs.io/en/latest/readme.html">pyLDAvis</a>:</strong> Esta librería está diseñado para ayudar a los usuarios a interpretar los temas que surgen de un análisis de tópicos. Nos permite visualizar en forma muy sencilla cada uno de los temas incluidos en el texto.</p>
+</li>
+</ul>
+<p>Actualmente el <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a> se esta sumando a la popularidad del <a href="https://iaarbook.github.io/deeplearning/">Deep Learning</a>, por lo que muchos de los <a href="https://iaarbook.github.io/python/#frameworks-para-deep-learning">frameworks</a> que se utilizan en <a href="https://iaarbook.github.io/deeplearning/">Deep Learning</a> pueden ser aplicados para realizar modelos de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">NLP</a>.</p>
+<h2 id="deep-learning-y-procesamiento-del-lenguaje-natural">Deep Learning y Procesamiento del Lenguaje Natural</h2>
+<p>Durante mucho tiempo, las técnicas principales de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a> fueron dominadas por métodos de <a href="https://iaarbook.github.io/ML/">aprendizaje automático</a> que utilizaron <a href="https://es.wikipedia.org/wiki/Modelo_lineal">modelos lineales</a> como las <a href="https://es.wikipedia.org/wiki/M%C3%A1quinas_de_vectores_de_soporte">máquinas de vectores de soporte</a> o la <a href="https://es.wikipedia.org/wiki/Regresi%C3%B3n_log%C3%ADstica">regresión logística</a>, entrenados sobre <a href="https://es.wikipedia.org/wiki/Vector">vectores</a> de características de muy alta dimensional pero muy escasos.
+Recientemente, el campo ha tenido cierto éxito en el cambio hacia modelos de <a href="https://iaarbook.github.io/deeplearning/">deep learning</a> sobre entradas densas.</p>
+<p>Las <a href="http://relopezbriega.github.io/category/redes-neuronales.html">redes neuronales</a> proporcionan una poderosa maquina de aprendizaje que es muy atractiva para su uso en problemas de <em>lenguaje natural</em>. Un componente importante en las <a href="http://relopezbriega.github.io/category/redes-neuronales.html">redes neuronales</a> para el <a href="https://es.wikipedia.org/wiki/Lenguaje">lenguaje</a> es el uso de una capa de <a href="https://en.wikipedia.org/wiki/Word_embedding">word embedding</a>, una asignación de símbolos discretos a vectores continuos en un espacio dimensional relativamente bajo. Cuando se utiliza <a href="https://en.wikipedia.org/wiki/Word_embedding">word embedding</a>, se transforman los distintos símbolos en objetos matemáticos sobre los que se pueden realizar operaciones. En particular, la distancia entre vectores puede equipararse a la distancia entre palabras, facilitando la generalización del comportamiento de una palabra sobre otra.
+Esta representación de palabras como vectores es aprendida por la red como parte del proceso de entrenamiento.
+Subiendo en la jerarquía, la red también aprende a combinar los vectores de palabras de una manera que es útil para la predicción. Esta capacidad alivia en cierta medida los problemas de dispersión de los datos.
+Hay dos tipos principales de <a href="https://iaarbook.github.io/deeplearning/#arquitecturas-de-deep-learning">arquitecturas de redes neuronales</a> que resultan muy útiles en los problemas de <a href="https://es.wikipedia.org/wiki/Procesamiento_de_lenguajes_naturales">Procesamiento del Lenguaje Natural</a>: las <a href="https://es.wikipedia.org/wiki/Red_neuronal_prealimentada">Redes neuronales prealimentadas</a> y las <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">Redes neuronales recurrentes</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../python/" class="btn btn-neutral float-right" title="Intro Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../bigdata/" class="btn btn-neutral" title="Big Data"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../bigdata/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../python/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": { linebreaks: { automatic: true } },
+             SVG: { linebreaks: { automatic: true } }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+</body>
+</html>
